@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Dashboard | Ultranet Pay</title>
 
-    <link rel="stylesheet" href="ultranet.css">
+    <link
+        rel="stylesheet"
+        href="ultranet.css"
+    >
+
 </head>
+
 
 <body>
 
     <main class="dashboard-page">
 
-        <!-- SIDEBAR -->
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
         <aside class="sidebar">
 
-            <!-- Logo -->
-            <a href="dashboard.html" class="brand-logo">
 
-                <div class="brand-icon">U</div>
+            <!-- LOGO -->
+
+            <a
+                href="dashboard.html"
+                class="brand-logo"
+            >
+
+                <div class="brand-icon">
+                    U
+                </div>
 
                 <span class="brand-name">
                     ULTRANET PAY
@@ -28,322 +50,592 @@
             </a>
 
 
-            <!-- Navigation -->
+
+            <!-- =========================
+                 NAVIGATION
+            ========================== -->
+
             <nav class="dashboard-nav">
 
-                <a href="dashboard.html" class="nav-item active">
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item active"
+                >
+
                     <span>⌂</span>
+
                     Dashboard
+
                 </a>
 
-                <a href="#services" class="nav-item">
+
+
+                <a
+                    href="services.html"
+                    class="nav-item"
+                >
+
                     <span>◈</span>
+
                     Services
+
                 </a>
 
-                <a href="#activity" class="nav-item">
+
+
+                <a
+                    href="#activity"
+                    class="nav-item"
+                >
+
                     <span>◷</span>
+
                     Activity
+
                 </a>
 
-                <a href="settings.html" class="nav-item">
+
+
+                <a
+                    href="settings.html"
+                    class="nav-item"
+                >
+
                     <span>⚙</span>
+
                     Settings
+
                 </a>
+
 
             </nav>
 
 
-            <!-- Support -->
+
+            <!-- =========================
+                 SIDEBAR BOTTOM
+            ========================== -->
+
             <div class="sidebar-bottom">
 
-                <a href="https://wa.me/12492884792" class="whatsapp-button" target="_blank">
 
-                    <span class="support-icon">?</span>
+                <!-- SUPPORT -->
+
+                <a
+                    href="https://wa.me/12492884792"
+                    target="_blank"
+                    class="support-card"
+                >
+
+                    <span class="support-icon">
+                        ?
+                    </span>
+
 
                     <div>
-                        <strong>Need Help?</strong>
-                        <small>Contact support</small>
+
+                        <strong>
+                            Need Help?
+                        </strong>
+
+                        <small>
+                            Contact support
+                        </small>
+
                     </div>
 
                 </a>
 
 
-                <a href="ultranet.html" class="logout-button">
+
+                <!-- LOGOUT -->
+
+                <a
+                    href="index.html"
+                    class="logout-button"
+                    id="logoutButton"
+                >
+
                     ← Log Out
+
                 </a>
 
+
             </div>
+
 
         </aside>
 
 
 
-        <!-- MAIN CONTENT -->
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
         <section class="dashboard-content">
 
-            <!-- Top Bar -->
+
+            <!-- =========================
+                 HEADER
+            ========================== -->
+
             <header class="dashboard-header">
 
+
                 <div>
+
                     <p class="dashboard-date">
                         ULTRANET PAY DASHBOARD
                     </p>
 
+
                     <h1>
-                        Welcome back, <span id="userName">User</span>
+
+                        Welcome back,
+
+                        <span id="userName">
+                            User
+                        </span>
+
                     </h1>
+
                 </div>
 
 
+
+                <!-- PROFILE -->
+
                 <div class="profile-preview">
+
 
                     <div class="notification">
                         🔔
                     </div>
 
-                    <div class="user-avatar" id="userAvatar">
-    U
-</div>
+
+                    <div
+                        class="user-avatar"
+                        id="userAvatar"
+                    >
+
+                        U
+
+                    </div>
+
 
                 </div>
+
 
             </header>
 
 
 
-            <!-- HERO CARD -->
+            <!-- =========================
+                 HERO CARD
+            ========================== -->
+
             <section class="dashboard-hero">
 
-                <div class="hero-glow"></div>
 
                 <div class="dashboard-hero-content">
 
+
                     <span class="dashboard-tag">
+
                         SMART. FAST. RELIABLE.
+
                     </span>
 
+
+
                     <h2>
+
                         Your trusted partner for
-                        <span>seamless transactions.</span>
+
+                        <span>
+                            seamless transactions.
+                        </span>
+
                     </h2>
 
+
+
                     <p>
+
                         Need to exchange currency or make a payment?
                         Connect directly with the Ultranet Pay team
                         and we'll handle the rest.
+
                     </p>
+
 
 
                     <a
                         href="transaction.html"
                         class="whatsapp-button"
                     >
+
                         START A TRANSACTION →
+
                     </a>
+
 
                 </div>
 
 
+
+                <!-- CURRENCIES -->
+
                 <div class="hero-currency">
+
 
                     <div class="floating-currency">
                         USD
                     </div>
 
+
                     <div class="floating-currency middle">
                         CAD
                     </div>
+
 
                     <div class="floating-currency">
                         GBP
                     </div>
 
+
                 </div>
+
 
             </section>
 
 
 
-            <!-- SERVICES -->
+            <!-- =========================
+                 SERVICES
+            ========================== -->
+
             <section
                 class="dashboard-section"
                 id="services"
             >
 
+
                 <div class="section-heading">
+
+
                     <div>
+
+
                         <span>
                             WHAT WE OFFER
                         </span>
 
+
                         <h2>
                             Our Services
                         </h2>
+
+
                     </div>
+
 
                 </div>
 
 
+
+                <!-- SERVICE GRID -->
+
                 <div class="service-grid">
 
 
-                    <!-- SERVICE 1 -->
+                    <!-- CURRENCY EXCHANGE -->
+
                     <div class="service-card">
+
 
                         <div class="service-icon">
                             ⇄
                         </div>
 
+
                         <h3>
                             Currency Exchange
                         </h3>
 
+
                         <p>
+
                             Exchange your supported currencies
                             quickly and securely with our team.
+
                         </p>
 
-                        <a href="https://wa.me/12492884792" class="whatsapp-button" target="_blank">
+
+                        <a
+                            href="transaction.html"
+                        >
+
+                            START EXCHANGE →
+
                         </a>
+
 
                     </div>
 
 
 
-                    <!-- SERVICE 2 -->
+                    <!-- INTERNATIONAL PAYMENTS -->
+
                     <div class="service-card">
+
 
                         <div class="service-icon">
                             ◎
                         </div>
 
+
                         <h3>
                             International Payments
                         </h3>
 
+
                         <p>
+
                             Make international payments
                             with a simple and reliable process.
+
                         </p>
 
-                        <a href="https://wa.me/12492884792" class="whatsapp-button" target="_blank">
+
+                        <a
+                            href="transaction.html"
+                        >
+
+                            MAKE A PAYMENT →
+
                         </a>
+
 
                     </div>
 
 
 
-                    <!-- SERVICE 3 -->
+                    <!-- PERSONAL ASSISTANCE -->
+
                     <div class="service-card">
+
 
                         <div class="service-icon">
                             ◇
                         </div>
 
+
                         <h3>
                             Personal Assistance
                         </h3>
 
+
                         <p>
+
                             Need something specific?
-                            Speak directly with our team.
+                            Speak directly with our team
+                            for personalised assistance.
+
                         </p>
 
-                        <a href="https://wa.me/12492884792" class="whatsapp-button" target="_blank">
+
+                        <a
+                            href="https://wa.me/12492884792"
+                            target="_blank"
+                        >
+
+                            CONTACT SUPPORT →
+
                         </a>
+
 
                     </div>
 
 
                 </div>
 
+
             </section>
 
 
 
-            <!-- ACTIVITY -->
+            <!-- =========================
+                 ACTIVITY
+            ========================== -->
+
             <section
                 class="dashboard-section"
                 id="activity"
             >
 
+
                 <div class="section-heading">
 
+
                     <div>
+
 
                         <span>
                             YOUR ACCOUNT
                         </span>
 
+
                         <h2>
                             Recent Activity
                         </h2>
 
+
                     </div>
+
 
                 </div>
 
 
+
+                <!-- ACTIVITY CARD -->
+
                 <div class="activity-card">
+
 
                     <div class="activity-icon">
                         ◷
                     </div>
 
+
+
                     <div>
+
 
                         <h3>
                             No recent activity yet
                         </h3>
 
+
                         <p>
-                            Your transaction activity will
-                            appear here.
+
+                            Your transaction activity
+                            will appear here.
+
                         </p>
+
 
                     </div>
 
+
                 </div>
+
 
             </section>
 
+
         </section>
+
 
     </main>
 
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script>
 
-    const userName =
-        localStorage.getItem(
-            "ultranetName"
+
+        /* =========================
+           USER DATA
+        ========================== */
+
+        const userName =
+            localStorage.getItem(
+                "ultranetName"
+            );
+
+
+        const dashboardName =
+            document.getElementById(
+                "userName"
+            );
+
+
+        const userAvatar =
+            document.getElementById(
+                "userAvatar"
+            );
+
+
+        /* =========================
+           LOAD USER
+        ========================== */
+
+        if (userName) {
+
+
+            dashboardName.textContent =
+                userName;
+
+
+            userAvatar.textContent =
+                userName
+                    .charAt(0)
+                    .toUpperCase();
+
+
+        } else {
+
+
+            /*
+             Redirect user if they
+             are not logged in
+            */
+
+            window.location.href =
+                "index.html";
+
+
+        }
+
+
+
+        /* =========================
+           LOGOUT
+        ========================== */
+
+        const logoutButton =
+            document.getElementById(
+                "logoutButton"
+            );
+
+
+        logoutButton.addEventListener(
+            "click",
+            function () {
+
+
+                localStorage.removeItem(
+                    "ultranetName"
+                );
+
+
+                localStorage.removeItem(
+                    "ultranetEmail"
+                );
+
+
+            }
         );
 
 
-    const dashboardName =
-        document.getElementById(
-            "userName"
-        );
+    </script>
 
-
-    const userAvatar =
-        document.getElementById(
-            "userAvatar"
-        );
-
-
-    if (userName) {
-
-        dashboardName.textContent =
-            userName;
-
-
-        userAvatar.textContent =
-            userName.charAt(0).toUpperCase();
-
-    }
-
-</script>
 
 </body>
+
 </html>
