@@ -2,21 +2,14 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>Dashboard | Ultranet Pay</title>
 
-    <link
-        rel="stylesheet"
-        href="ultranet.css"
-    >
-
+    <link rel="stylesheet" href="ultranet.css">
 </head>
 
 
@@ -25,15 +18,41 @@
     <main class="dashboard-page">
 
 
-        <!-- =========================
-             SIDEBAR
-        ========================== -->
+        <!-- MOBILE MENU BUTTON -->
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Open Menu"
+        >
+            ☰
+        </button>
 
-        <aside class="sidebar">
+
+        <!-- MOBILE OVERLAY -->
+        <div
+            class="mobile-menu-overlay"
+            id="mobileMenuOverlay"
+        ></div>
 
 
-            <!-- LOGO -->
+        <!-- SIDEBAR -->
+        <aside
+            class="sidebar"
+            id="sidebar"
+        >
 
+
+            <!-- MOBILE CLOSE BUTTON -->
+            <button
+                class="mobile-close-button"
+                id="mobileCloseButton"
+                aria-label="Close Menu"
+            >
+                ×
+            </button>
+
+
+            <!-- Logo -->
             <a
                 href="dashboard.html"
                 class="brand-logo"
@@ -50,88 +69,60 @@
             </a>
 
 
-
-            <!-- =========================
-                 NAVIGATION
-            ========================== -->
-
+            <!-- Navigation -->
             <nav class="dashboard-nav">
-
 
                 <a
                     href="dashboard.html"
                     class="nav-item active"
                 >
-
                     <span>⌂</span>
-
                     Dashboard
-
                 </a>
-
 
 
                 <a
-                    href="services.html"
+                    href="#services"
                     class="nav-item"
                 >
-
                     <span>◈</span>
-
                     Services
-
                 </a>
-
 
 
                 <a
                     href="#activity"
                     class="nav-item"
                 >
-
                     <span>◷</span>
-
                     Activity
-
                 </a>
-
 
 
                 <a
                     href="settings.html"
                     class="nav-item"
                 >
-
                     <span>⚙</span>
-
                     Settings
-
                 </a>
-
 
             </nav>
 
 
-
-            <!-- =========================
-                 SIDEBAR BOTTOM
-            ========================== -->
-
+            <!-- Support -->
             <div class="sidebar-bottom">
 
 
-                <!-- SUPPORT -->
-
                 <a
                     href="https://wa.me/12492884792"
+                    class="whatsapp-button"
                     target="_blank"
-                    class="support-card"
                 >
 
                     <span class="support-icon">
                         ?
                     </span>
-
 
                     <div>
 
@@ -148,38 +139,23 @@
                 </a>
 
 
-
-                <!-- LOGOUT -->
-
                 <a
-                    href="index.html"
+                    href="ultranet.html"
                     class="logout-button"
-                    id="logoutButton"
                 >
-
                     ← Log Out
-
                 </a>
 
-
             </div>
-
 
         </aside>
 
 
-
-        <!-- =========================
-             MAIN CONTENT
-        ========================== -->
-
+        <!-- MAIN CONTENT -->
         <section class="dashboard-content">
 
 
-            <!-- =========================
-                 HEADER
-            ========================== -->
-
+            <!-- TOP BAR -->
             <header class="dashboard-header">
 
 
@@ -191,23 +167,16 @@
 
 
                     <h1>
-
                         Welcome back,
-
                         <span id="userName">
                             User
                         </span>
-
                     </h1>
 
                 </div>
 
 
-
-                <!-- PROFILE -->
-
                 <div class="profile-preview">
-
 
                     <div class="notification">
                         🔔
@@ -218,35 +187,29 @@
                         class="user-avatar"
                         id="userAvatar"
                     >
-
                         U
-
                     </div>
 
-
                 </div>
-
 
             </header>
 
 
 
-            <!-- =========================
-                 HERO CARD
-            ========================== -->
-
+            <!-- HERO CARD -->
             <section class="dashboard-hero">
 
 
-                <div class="dashboard-hero-content">
+                <div class="hero-glow"></div>
 
+
+                <div
+                    class="dashboard-hero-content"
+                >
 
                     <span class="dashboard-tag">
-
                         SMART. FAST. RELIABLE.
-
                     </span>
-
 
 
                     <h2>
@@ -260,42 +223,40 @@
                     </h2>
 
 
-
                     <p>
 
-                        Need to exchange currency or make a payment?
-                        Connect directly with the Ultranet Pay team
-                        and we'll handle the rest.
+                        Need to exchange currency or
+                        make a payment?
+
+                        Connect directly with the
+                        Ultranet Pay team and we'll
+                        handle the rest.
 
                     </p>
-
 
 
                     <a
                         href="transaction.html"
                         class="whatsapp-button"
                     >
-
                         START A TRANSACTION →
-
                     </a>
-
 
                 </div>
 
 
 
                 <!-- CURRENCIES -->
-
                 <div class="hero-currency">
-
 
                     <div class="floating-currency">
                         USD
                     </div>
 
 
-                    <div class="floating-currency middle">
+                    <div
+                        class="floating-currency middle"
+                    >
                         CAD
                     </div>
 
@@ -304,18 +265,13 @@
                         GBP
                     </div>
 
-
                 </div>
-
 
             </section>
 
 
 
-            <!-- =========================
-                 SERVICES
-            ========================== -->
-
+            <!-- SERVICES -->
             <section
                 class="dashboard-section"
                 id="services"
@@ -324,9 +280,7 @@
 
                 <div class="section-heading">
 
-
                     <div>
-
 
                         <span>
                             WHAT WE OFFER
@@ -337,23 +291,17 @@
                             Our Services
                         </h2>
 
-
                     </div>
-
 
                 </div>
 
 
 
-                <!-- SERVICE GRID -->
-
                 <div class="service-grid">
 
 
-                    <!-- CURRENCY EXCHANGE -->
-
+                    <!-- SERVICE 1 -->
                     <div class="service-card">
-
 
                         <div class="service-icon">
                             ⇄
@@ -366,30 +314,24 @@
 
 
                         <p>
-
-                            Exchange your supported currencies
-                            quickly and securely with our team.
-
+                            Exchange your supported
+                            currencies quickly and
+                            securely with our team.
                         </p>
 
 
                         <a
                             href="transaction.html"
                         >
-
                             START EXCHANGE →
-
                         </a>
-
 
                     </div>
 
 
 
-                    <!-- INTERNATIONAL PAYMENTS -->
-
+                    <!-- SERVICE 2 -->
                     <div class="service-card">
-
 
                         <div class="service-icon">
                             ◎
@@ -402,30 +344,24 @@
 
 
                         <p>
-
                             Make international payments
-                            with a simple and reliable process.
-
+                            with a simple and reliable
+                            process.
                         </p>
 
 
                         <a
                             href="transaction.html"
                         >
-
                             MAKE A PAYMENT →
-
                         </a>
-
 
                     </div>
 
 
 
-                    <!-- PERSONAL ASSISTANCE -->
-
+                    <!-- SERVICE 3 -->
                     <div class="service-card">
-
 
                         <div class="service-icon">
                             ◇
@@ -438,11 +374,10 @@
 
 
                         <p>
-
                             Need something specific?
-                            Speak directly with our team
-                            for personalised assistance.
-
+                            Speak directly with our
+                            team for personalised
+                            assistance.
                         </p>
 
 
@@ -450,26 +385,19 @@
                             href="https://wa.me/12492884792"
                             target="_blank"
                         >
-
                             CONTACT SUPPORT →
-
                         </a>
-
 
                     </div>
 
 
                 </div>
 
-
             </section>
 
 
 
-            <!-- =========================
-                 ACTIVITY
-            ========================== -->
-
+            <!-- ACTIVITY -->
             <section
                 class="dashboard-section"
                 id="activity"
@@ -478,9 +406,7 @@
 
                 <div class="section-heading">
 
-
                     <div>
-
 
                         <span>
                             YOUR ACCOUNT
@@ -491,15 +417,11 @@
                             Recent Activity
                         </h2>
 
-
                     </div>
-
 
                 </div>
 
 
-
-                <!-- ACTIVITY CARD -->
 
                 <div class="activity-card">
 
@@ -509,9 +431,7 @@
                     </div>
 
 
-
                     <div>
-
 
                         <h3>
                             No recent activity yet
@@ -519,15 +439,11 @@
 
 
                         <p>
-
                             Your transaction activity
                             will appear here.
-
                         </p>
 
-
                     </div>
-
 
                 </div>
 
@@ -542,16 +458,12 @@
 
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
+    <!-- JAVASCRIPT -->
 
     <script>
 
 
-        /* =========================
-           USER DATA
-        ========================== */
+        /* USER DETAILS */
 
         const userName =
             localStorage.getItem(
@@ -571,12 +483,7 @@
             );
 
 
-        /* =========================
-           LOAD USER
-        ========================== */
-
         if (userName) {
-
 
             dashboardName.textContent =
                 userName;
@@ -584,50 +491,93 @@
 
             userAvatar.textContent =
                 userName
-                    .charAt(0)
-                    .toUpperCase();
-
-
-        } else {
-
-
-            /*
-             Redirect user if they
-             are not logged in
-            */
-
-            window.location.href =
-                "index.html";
-
+                .charAt(0)
+                .toUpperCase();
 
         }
 
 
 
-        /* =========================
-           LOGOUT
-        ========================== */
+        /* MOBILE MENU */
 
-        const logoutButton =
+        const mobileMenuButton =
             document.getElementById(
-                "logoutButton"
+                "mobileMenuButton"
             );
 
 
-        logoutButton.addEventListener(
+        const mobileCloseButton =
+            document.getElementById(
+                "mobileCloseButton"
+            );
+
+
+        const sidebar =
+            document.getElementById(
+                "sidebar"
+            );
+
+
+        const mobileMenuOverlay =
+            document.getElementById(
+                "mobileMenuOverlay"
+            );
+
+
+        /* OPEN MENU */
+
+        mobileMenuButton.addEventListener(
             "click",
             function () {
 
-
-                localStorage.removeItem(
-                    "ultranetName"
+                sidebar.classList.add(
+                    "mobile-sidebar-open"
                 );
 
 
-                localStorage.removeItem(
-                    "ultranetEmail"
+                mobileMenuOverlay.classList.add(
+                    "mobile-overlay-open"
                 );
 
+            }
+        );
+
+
+
+        /* CLOSE MENU BUTTON */
+
+        mobileCloseButton.addEventListener(
+            "click",
+            function () {
+
+                sidebar.classList.remove(
+                    "mobile-sidebar-open"
+                );
+
+
+                mobileMenuOverlay.classList.remove(
+                    "mobile-overlay-open"
+                );
+
+            }
+        );
+
+
+
+        /* CLOSE WHEN OVERLAY IS CLICKED */
+
+        mobileMenuOverlay.addEventListener(
+            "click",
+            function () {
+
+                sidebar.classList.remove(
+                    "mobile-sidebar-open"
+                );
+
+
+                mobileMenuOverlay.classList.remove(
+                    "mobile-overlay-open"
+                );
 
             }
         );
