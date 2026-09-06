@@ -3554,3 +3554,100 @@ body {
     }
 
 }
+
+/* =========================
+   FINAL MOBILE FIX
+========================= */
+
+@media (max-width: 1200px) {
+
+    .dashboard-page {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+
+        position: relative;
+
+        padding: 20px 25px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        border-right: none;
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,.07);
+    }
+
+
+    .dashboard-nav {
+        display: none;
+    }
+
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+
+    .dashboard-content,
+    .services-content,
+    .settings-content,
+    .transaction-content {
+
+        width: 100%;
+
+        margin-left: 0;
+
+        max-width: 100%;
+
+        padding: 35px 20px;
+    }
+
+}
+
+
+/* PHONE FIX */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .dashboard-header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+    .dashboard-hero {
+        padding: 30px 22px;
+    }
+
+
+    .dashboard-hero h2 {
+        font-size: 28px;
+    }
+
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .profile-preview {
+        gap: 12px;
+    }
+
+}
