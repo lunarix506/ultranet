@@ -3846,38 +3846,58 @@ body {
 }
 
 
+/* ========================================
+   CLEAN MOBILE NAVIGATION
+======================================== */
+
+/* Hidden by default */
+.mobile-nav {
+    display: none;
 }
 
-/* ============================
-   MOBILE NAVIGATION
-============================ */
-
+/* Mobile only */
 @media screen and (max-width: 768px) {
 
-    /* Hide desktop sidebar */
-    .sidebar {
-        display: none;
-    }
-
-    /* Mobile navigation */
+    /* Show horizontal navigation */
     .mobile-nav {
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: space-around;
         width: 100%;
         padding: 14px 10px;
+        box-sizing: border-box;
         background: #111111;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .mobile-nav a {
-        color: #888;
-        text-decoration: none;
-        font-size: 11px;
+        color: #a0a0a0 !important;
+        text-decoration: none !important;
+        font-size: 13px;
         font-weight: 600;
+        white-space: nowrap;
     }
 
     .mobile-nav a.active {
-        color: #ff9800;
+        color: #ff9800 !important;
+    }
+
+    /* Fix dashboard header */
+    .dashboard-header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 15px !important;
+    }
+
+    .dashboard-header h1 {
+        font-size: 32px !important;
+    }
+
+    .header-actions {
+        display: flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+        flex-shrink: 0 !important;
     }
 }
