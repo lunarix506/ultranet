@@ -3847,3 +3847,37 @@ body {
 
 
 }
+
+/* ============================
+   MOBILE NAVIGATION
+============================ */
+
+@media screen and (max-width: 768px) {
+
+    /* Hide desktop sidebar */
+    .sidebar {
+        display: none;
+    }
+
+    /* Mobile navigation */
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 14px 10px;
+        background: #111111;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .mobile-nav a {
+        color: #888;
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .mobile-nav a.active {
+        color: #ff9800;
+    }
+}
