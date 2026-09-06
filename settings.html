@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Settings | Ultranet Pay</title>
+
+    <link
+        rel="stylesheet"
+        href="ultranet.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="settings-page">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="dashboard.html"
+                class="brand-logo"
+            >
+
+                <div class="brand-icon">
+                    U
+                </div>
+
+                <span class="brand-name">
+                    ULTRANET PAY
+                </span>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="dashboard-nav">
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item"
+                >
+                    <span>⌂</span>
+                    Dashboard
+                </a>
+
+
+                <a
+                    href="services.html"
+                    class="nav-item"
+                >
+                    <span>◈</span>
+                    Services
+                </a>
+
+
+                <a
+                    href="dashboard.html#activity"
+                    class="nav-item"
+                >
+                    <span>◷</span>
+                    Activity
+                </a>
+
+
+                <a
+                    href="settings.html"
+                    class="nav-item active"
+                >
+                    <span>⚙</span>
+                    Settings
+                </a>
+
+            </nav>
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="sidebar-bottom">
+
+
+                <a
+                    href="https://wa.me/12492884792"
+                    target="_blank"
+                    class="support-card"
+                >
+
+                    <span class="support-icon">
+                        ?
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Need Help?
+                        </strong>
+
+                        <small>
+                            Contact support
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="ultranet.html"
+                    class="logout-button"
+                >
+                    ← Log Out
+                </a>
+
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <section class="settings-content">
+
+
+            <!-- HEADER -->
+
+            <header class="settings-header">
+
+                <div>
+
+                    <span class="page-tag">
+                        ACCOUNT SETTINGS
+                    </span>
+
+                    <h1>
+                        Manage your
+                        <span>account.</span>
+                    </h1>
+
+                    <p>
+                        Update your personal information and
+                        manage your Ultranet Pay account.
+                    </p>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- PROFILE CARD -->
+
+            <section class="settings-card profile-card">
+
+
+                <div class="settings-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            PROFILE
+                        </span>
+
+                        <h2>
+                            Personal Information
+                        </h2>
+
+                        <p>
+                            Keep your account information
+                            up to date.
+                        </p>
+
+                    </div>
+
+
+                    <div class="large-avatar" id="settingsAvatar">
+    U
+</div>
+
+                </div>
+
+
+
+                <!-- FORM -->
+
+                <form
+                    id="profileForm"
+                    class="settings-form"
+                >
+
+
+                    <div class="settings-form-grid">
+                        <!-- FULL NAME -->
+
+                        <div class="form-group">
+
+                            <label for="settings-name">
+                                Full Name
+                            </label>
+
+                            <input
+    type="text"
+    id="settings-name"
+    placeholder="Enter your full name"
+>
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="settings-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="settings-email"
+                                placeholder="your@email.com"
+                            >
+
+                        </div>
+
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+                            <label for="settings-phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="settings-phone"
+                                placeholder="Enter phone number"
+                            >
+
+                        </div>
+
+
+
+                        <!-- COUNTRY -->
+
+                        <div class="form-group">
+
+                            <label for="settings-country">
+                                Country
+                            </label>
+
+                            <input
+                                type="text"
+                                id="settings-country"
+                                placeholder="Enter your country"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- SAVE BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="save-button"
+                    >
+                        SAVE CHANGES →
+                    </button>
+
+
+                </form>
+
+
+            </section>
+
+
+
+            <!-- SECURITY -->
+
+            <section class="settings-card security-card">
+
+
+                <div class="settings-card-title">
+
+                    <span class="card-label">
+                        SECURITY
+                    </span>
+
+                    <h2>
+                        Password & Security
+                    </h2>
+
+                    <p>
+                        Keep your account secure by using
+                        a strong password.
+                    </p>
+
+                </div>
+
+
+                <div class="security-option">
+
+
+                    <div class="security-icon">
+                        🔒
+                    </div>
+
+
+                    <div class="security-info">
+
+                        <h3>
+                            Change Password
+                        </h3>
+
+                        <p>
+                            Update your account password
+                            anytime.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="secondary-button"
+                        id="changePasswordButton"
+                    >
+                        CHANGE PASSWORD
+                    </button>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- SUPPORT -->
+
+            <section class="settings-card support-settings">
+
+
+                <div class="settings-card-title">
+
+                    <span class="card-label">
+                        SUPPORT
+                    </span>
+
+                    <h2>
+                        Need Assistance?
+                    </h2>
+
+                    <p>
+                        Our team is always available to
+                        help you with your transactions.
+                    </p>
+
+                </div>
+                <a
+                    href="https://wa.me/12492884792"
+                    target="_blank"
+                    class="support-settings-button"
+                >
+                    CHAT WITH SUPPORT →
+                </a>
+
+
+            </section>
+
+
+
+            <!-- LOGOUT -->
+
+            <section class="logout-section">
+
+                <div>
+
+                    <h3>
+                        Want to leave?
+                    </h3>
+
+                    <p>
+                        You can safely log out of your account.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="ultranet.html"
+                    class="danger-button"
+                >
+                    LOG OUT →
+                </a>
+
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+    const userName =
+        localStorage.getItem(
+            "ultranetName"
+        );
+
+
+    const dashboardName =
+        document.getElementById(
+            "userName"
+        );
+
+
+    const userAvatar =
+        document.getElementById(
+            "userAvatar"
+        );
+
+
+    if (userName) {
+
+        dashboardName.textContent =
+            userName;
+
+
+        userAvatar.textContent =
+            userName.charAt(0).toUpperCase();
+
+    }
+
+</script>
+
+
+</body>
+</html>

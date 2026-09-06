@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Ultranet Pay</title>
+
+    <link rel="stylesheet" href="ultranet.css">
+</head>
+
+<body>
+
+    <main class="signup-page">
+
+        <!-- LEFT BRANDING SECTION -->
+        <section class="signup-branding">
+
+            <div class="signup-background-grid"></div>
+
+            <!-- Logo -->
+            <a href="ultranet.html" class="brand-logo">
+
+                <div class="brand-icon">U</div>
+
+                <span class="brand-name">
+                    ULTRANET PAY
+                </span>
+
+            </a>
+
+
+            <!-- Hero -->
+            <div class="signup-hero">
+
+                <span class="hero-tag">
+                    JOIN ULTRANET PAY
+                </span>
+
+                <h1>
+                    Your smarter way to
+                    <span>move money.</span>
+                </h1>
+
+                <p>
+                    Create your Ultranet Pay account and get easy access
+                    to our fast, secure and reliable currency exchange services.
+                </p>
+
+
+                <!-- Features -->
+                <div class="signup-features">
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">✓</div>
+
+                        <div>
+                            <h3>Simple & Secure</h3>
+                            <p>Your information is protected.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">⚡</div>
+
+                        <div>
+                            <h3>Fast Service</h3>
+                            <p>Quick response when you need us.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <div class="feature-icon">↗</div>
+
+                        <div>
+                            <h3>Easy Transactions</h3>
+                            <p>Connect directly with our team on WhatsApp.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer -->
+            <div class="signup-footer">
+                © 2026 Ultranet Pay. All rights reserved.
+            </div>
+
+        </section>
+
+
+
+        <!-- RIGHT FORM SECTION -->
+        <section class="signup-section">
+
+            <div class="signup-card">
+
+                <h2>Create Account</h2>
+
+                <p>
+                    Enter your details below to get started.
+                </p>
+
+
+                <form id="signupForm">
+
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="fullname">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="signup-email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="signup-email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="signup-password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="signup-password"
+                            placeholder="Create a password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+
+                        <label for="confirm-password">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            placeholder="Confirm your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Terms -->
+                    <label class="terms-check">
+
+                        <input
+                            type="checkbox"
+                            required
+                        >
+
+                        <span>
+                            I agree to the
+                            <a href="#">Terms of Service</a>
+                            and
+                            <a href="#">Privacy Policy</a>
+                        </span>
+
+                    </label>
+
+
+                    <!-- Button -->
+                    <button
+                        type="submit"
+                        class="main-button"
+                    >
+                        CREATE ACCOUNT →
+                    </button>
+
+                </form>
+
+
+                <!-- Login Link -->
+                <div class="bottom-link">
+    Already have an account?
+    <a href="./login.html" onclick="window.location.href='./login.html'; return false;">Log In</a>
+</div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SIMPLE PASSWORD CHECK -->
+
+  <script>
+
+const signupForm =
+    document.getElementById("signupForm");
+
+
+signupForm.addEventListener(
+    "submit",
+    function(event) {
+
+        event.preventDefault();
+
+
+        /* GET USER DETAILS */
+
+        const fullname =
+            document.getElementById("fullname")
+            .value
+            .trim();
+
+
+        const email =
+            document.getElementById("signup-email")
+            .value
+            .trim()
+            .toLowerCase();
+
+
+        const phone =
+            document.getElementById("phone")
+            .value
+            .trim();
+
+
+        const password =
+            document.getElementById("signup-password")
+            .value;
+
+
+        const confirmPassword =
+            document.getElementById("confirm-password")
+            .value;
+
+
+        /* CHECK PASSWORD */
+
+        if (password !== confirmPassword) {
+
+            alert("Passwords do not match.");
+
+            return;
+
+        }
+
+
+        /* CHECK IF ACCOUNT EXISTS */
+
+        const existingEmail =
+            localStorage.getItem("ultranetEmail");
+
+
+        if (
+            existingEmail &&
+            existingEmail === email
+        ) {
+
+            alert(
+                "An account with this email already exists. Please log in."
+            );
+
+            window.location.href =
+                "ultranet.html";
+
+            return;
+
+        }
+
+
+        /* SAVE ACCOUNT */
+
+        localStorage.setItem(
+            "ultranetName",
+            fullname
+        );
+
+
+        localStorage.setItem(
+            "ultranetEmail",
+            email
+        );
+
+
+        localStorage.setItem(
+            "ultranetPhone",
+            phone
+        );
+
+
+        localStorage.setItem(
+            "ultranetPassword",
+            password
+        );
+
+
+        /* CREATE LOGIN SESSION */
+
+        localStorage.setItem(
+            "ultranetLoggedIn",
+            "true"
+        );
+
+
+        alert(
+            "Account created successfully!"
+        );
+
+
+        /* GO TO DASHBOARD */
+
+        window.location.href =
+            "dashboard.html";
+
+    }
+);
+
+</script>
+
+</body>
+</html>

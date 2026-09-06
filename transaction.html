@@ -1,0 +1,593 @@
+<script>
+
+    /* GET SAVED USER INFORMATION */
+
+    const savedName =
+        localStorage.getItem(
+            "ultranetName"
+        );
+
+
+    const savedEmail =
+        localStorage.getItem(
+            "ultranetEmail"
+        );
+
+
+    const savedPhone =
+        localStorage.getItem(
+            "ultranetPhone"
+        );
+
+
+    /* GET PAGE ELEMENTS */
+
+    const settingsName =
+        document.getElementById(
+            "settings-name"
+        );
+
+
+    const settingsEmail =
+        document.getElementById(
+            "settings-email"
+        );
+
+
+    const settingsPhone =
+        document.getElementById(
+            "settings-phone"
+        );
+
+
+    const settingsAvatar =
+        document.getElementById(
+            "settingsAvatar"
+        );
+
+
+    /* DISPLAY SAVED INFORMATION */
+
+    if (savedName) {
+
+        settingsName.value =
+            savedName;
+
+
+        settingsAvatar.textContent =
+            savedName.charAt(0).toUpperCase();
+
+    }
+
+
+    if (savedEmail) {
+
+        settingsEmail.value =
+            savedEmail;
+
+    }
+
+
+    if (savedPhone) {
+
+        settingsPhone.value =
+            savedPhone;
+
+    }
+
+
+    /* SAVE PROFILE CHANGES */
+
+    const profileForm =
+        document.getElementById(
+            "profileForm"
+        );
+
+
+    profileForm.addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            localStorage.setItem(
+                "ultranetName",
+                settingsName.value
+            );
+
+
+            localStorage.setItem(
+                "ultranetEmail",
+                settingsEmail.value
+            );
+
+
+            localStorage.setItem(
+                "ultranetPhone",
+                settingsPhone.value
+            );
+
+
+            settingsAvatar.textContent =
+                settingsName.value
+                .charAt(0)
+                .toUpperCase();
+
+
+            alert(
+                "Your profile has been updated!"
+            );
+
+        }
+    );
+
+
+    /* CHANGE PASSWORD */
+
+    const changePasswordButton =
+        document.getElementById(
+            "changePasswordButton"
+        );
+
+
+    changePasswordButton.addEventListener(
+        "click",
+        function() {
+
+            alert(
+                "Password change feature coming soon."
+            );
+
+        }
+    );
+
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Start Transaction | Ultranet Pay</title>
+
+    <link
+        rel="stylesheet"
+        href="ultranet.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="transaction-page">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+
+            <a
+                href="dashboard.html"
+                class="brand-logo"
+            >
+
+                <div class="brand-icon">
+                    U
+                </div>
+
+                <span class="brand-name">
+                    ULTRANET PAY
+                </span>
+
+            </a>
+
+
+            <nav class="dashboard-nav">
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item"
+                >
+                    <span>⌂</span>
+                    Dashboard
+                </a>
+
+
+                <a
+                    href="services.html"
+                    class="nav-item active"
+                >
+                    <span>◈</span>
+                    Services
+                </a>
+
+
+                <a
+                    href="dashboard.html#activity"
+                    class="nav-item"
+                >
+                    <span>◷</span>
+                    Activity
+                </a>
+
+
+                <a
+                    href="settings.html"
+                    class="nav-item"
+                >
+                    <span>⚙</span>
+                    Settings
+                </a>
+
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+
+                <a
+                    href="https://wa.me/12492884792"
+                    target="_blank"
+                    class="support-card"
+                >
+
+                    <span class="support-icon">
+                        ?
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Need Help?
+                        </strong>
+
+                        <small>
+                            Contact support
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="ultranet.html"
+                    class="logout-button"
+                >
+                    ← Log Out
+                </a>
+
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <section class="transaction-content">
+
+
+            <!-- BACK -->
+
+            <a
+                href="services.html"
+                class="back-button"
+            >
+                ← BACK TO SERVICES
+            </a>
+
+
+            <!-- HEADER -->
+
+            <header class="transaction-header">
+
+                <span class="page-tag">
+                    START A REQUEST
+                </span>
+
+                <h1>
+                    Let's get your
+                    <span>request started.</span>
+                </h1>
+
+                <p>
+                    Tell us what you need and we'll prepare
+                    your request before connecting you with
+                    our team on WhatsApp.
+                </p>
+
+            </header>
+
+
+
+            <!-- FORM CARD -->
+
+            <section class="transaction-card">
+
+
+                <div class="transaction-card-top">
+
+                    <div>
+
+                        <span class="card-label">
+                            TRANSACTION DETAILS
+                        </span>
+
+                        <h2>
+                            What do you need?
+                        </h2>
+
+                    </div>
+
+
+                    <div class="transaction-icon">
+                        ⇄
+                    </div>
+
+                </div>
+
+
+
+                <form id="transactionForm">
+
+
+                    <!-- SERVICE -->
+
+                    <div class="transaction-form-group">
+
+                        <label for="service">
+                            Select Service
+                        </label>
+                        <select id="service" required>
+
+                            <option value="">
+                                Choose a service
+                            </option>
+
+                            <option value="Currency Exchange">
+                                Currency Exchange
+                            </option>
+
+                            <option value="International Payment">
+                                International Payment
+                            </option>
+
+                            <option value="Personal Assistance">
+                                Personal Assistance
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- FROM / TO -->
+
+                    <div class="transaction-row">
+
+
+                        <div class="transaction-form-group">
+
+                            <label for="fromCurrency">
+                                You Have
+                            </label>
+
+                            <select id="fromCurrency">
+
+                                <option value="">
+                                    Select Currency
+                                </option>
+
+                                <option>USD</option>
+                                <option>CAD</option>
+                                <option>GBP</option>
+                                <option>NGN</option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="swap-icon">
+                            ⇄
+                        </div>
+
+
+
+                        <div class="transaction-form-group">
+
+                            <label for="toCurrency">
+                                You Need
+                            </label>
+
+                            <select id="toCurrency">
+
+                                <option value="">
+                                    Select Currency
+                                </option>
+
+                                <option>USD</option>
+                                <option>CAD</option>
+                                <option>GBP</option>
+                                <option>NGN</option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- AMOUNT -->
+
+                    <div class="transaction-form-group">
+
+                        <label for="amount">
+                            Amount
+                        </label>
+
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="Enter amount"
+                        >
+
+                    </div>
+
+
+
+                    <!-- DETAILS -->
+
+                    <div class="transaction-form-group">
+
+                        <label for="details">
+                            Additional Details
+                        </label>
+
+                        <textarea
+                            id="details"
+                            placeholder="Tell us anything else we should know..."
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="submit-request-button"
+                    >
+                        CONTINUE TO WHATSAPP →
+                    </button>
+
+
+                </form>
+
+
+            </section>
+
+
+
+            <!-- INFO -->
+
+            <div class="transaction-info">
+
+                <div class="info-icon">
+                    🔒
+                </div>
+
+                <p>
+                    Your request will be sent directly to
+                    the Ultranet Pay team. We do not process
+                    automatic transactions on this platform.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        const transactionForm =
+            document.getElementById(
+                "transactionForm"
+            );
+
+
+        transactionForm.addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+
+                const userName =
+                    localStorage.getItem(
+                        "ultranetName"
+                    ) || "Customer";
+
+
+                const service =
+                    document.getElementById(
+                        "service"
+                    ).value;
+
+
+                const fromCurrency =
+                    document.getElementById(
+                        "fromCurrency"
+                    ).value;
+
+
+                const toCurrency =
+                    document.getElementById(
+                        "toCurrency"
+                    ).value;
+
+
+                const amount =
+                    document.getElementById(
+                        "amount"
+                    ).value;
+
+
+                const details =
+                    document.getElementById(
+                        "details"
+                    ).value;
+
+
+                /* CREATE WHATSAPP MESSAGE */
+const message =
+"Hello Ultranet Pay!\n\n" +
+"I would like to make a service request.\n\n" +
+"👤 Name: " + userName + "\n\n" +
+"💳 Service: " + service + "\n\n" +
+"💰 From: " + fromCurrency + "\n\n" +
+"💸 To: " + toCurrency + "\n\n" +
+"💵 Amount: " + amount + "\n\n" +
+"📄 Additional Details:\n" + details + "\n\n" +
+"Please assist me with this request.";
+
+const whatsappLink =
+"https://wa.me/12492884792?text=" +
+encodeURIComponent(message);
+
+window.open(whatsappLink, "_blank");
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
