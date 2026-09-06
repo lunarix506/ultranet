@@ -3651,3 +3651,196 @@ body {
     }
 
 }
+
+/* =========================================
+   MOBILE DASHBOARD FIX
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    * {
+        box-sizing: border-box !important;
+    }
+
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+    }
+
+    .dashboard-page {
+        display: block !important;
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+
+    /* HIDE DESKTOP SIDEBAR */
+    .sidebar {
+        display: none !important;
+        width: 0 !important;
+    }
+
+
+    /* MAIN CONTENT */
+    .dashboard-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 25px 20px 50px !important;
+    }
+
+
+    /* HEADER */
+    .dashboard-header {
+        width: 100% !important;
+
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+
+        gap: 15px !important;
+        margin-bottom: 30px !important;
+    }
+
+
+    .dashboard-header h1 {
+        font-size: 30px !important;
+        line-height: 1.3 !important;
+        word-break: normal !important;
+    }
+
+
+    .dashboard-date {
+        font-size: 10px !important;
+    }
+
+
+    /* PROFILE */
+    .profile-preview {
+        flex-shrink: 0 !important;
+    }
+
+
+    /* HERO */
+    .dashboard-hero {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 35px 25px !important;
+        margin: 0 0 50px !important;
+
+        overflow: hidden !important;
+    }
+
+
+    .dashboard-hero-content {
+        width: 100% !important;
+        position: relative !important;
+        z-index: 2 !important;
+    }
+
+
+    .dashboard-hero h2 {
+        font-size: 34px !important;
+        line-height: 1.25 !important;
+    }
+
+
+    .dashboard-hero p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* HIDE FLOATING CURRENCIES ON MOBILE */
+    .hero-currency {
+        display: none !important;
+    }
+
+
+    /* SECTIONS */
+    .dashboard-section {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 0 50px !important;
+    }
+
+
+    .section-heading h2 {
+        font-size: 30px !important;
+    }
+
+
+    /* SERVICES */
+    .service-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+
+        width: 100% !important;
+
+        gap: 20px !important;
+    }
+
+
+    .service-card {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 30px !important;
+    }
+
+
+    /* ACTIVITY */
+    .activity-card {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 25px !important;
+    }
+
+}
+
+
+/* EXTRA SMALL PHONES */
+
+@media screen and (max-width: 480px) {
+
+    .dashboard-content {
+        padding: 20px 16px 40px !important;
+    }
+
+
+    .dashboard-header h1 {
+        font-size: 25px !important;
+    }
+
+
+    .dashboard-hero {
+        padding: 30px 22px !important;
+    }
+
+
+    .dashboard-hero h2 {
+        font-size: 29px !important;
+    }
+
+
+    .dashboard-hero p {
+        font-size: 15px !important;
+    }
+
+
+    .main-button,
+    .dashboard-hero .whatsapp-button {
+        width: 100% !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+}
