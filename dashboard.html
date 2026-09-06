@@ -23,17 +23,6 @@
             id="sidebar"
         >
 
-
-            <!-- MOBILE CLOSE BUTTON -->
-            <button
-                class="mobile-close-button"
-                id="mobileCloseButton"
-                aria-label="Close Menu"
-            >
-                ×
-            </button>
-
-
             <!-- Logo -->
             <a
                 href="dashboard.html"
@@ -474,92 +463,6 @@
                 .toUpperCase();
 
         }
-
-
-
-        /* MOBILE MENU */
-
-        const mobileMenuButton =
-            document.getElementById(
-                "mobileMenuButton"
-            );
-
-
-        const mobileCloseButton =
-            document.getElementById(
-                "mobileCloseButton"
-            );
-
-
-        const sidebar =
-            document.getElementById(
-                "sidebar"
-            );
-
-
-        const mobileMenuOverlay =
-            document.getElementById(
-                "mobileMenuOverlay"
-            );
-
-
-        /* OPEN MENU */
-
-        mobileMenuButton.addEventListener(
-            "click",
-            function () {
-
-                sidebar.classList.add(
-                    "mobile-sidebar-open"
-                );
-
-
-                mobileMenuOverlay.classList.add(
-                    "mobile-overlay-open"
-                );
-
-            }
-        );
-
-
-
-        /* CLOSE MENU BUTTON */
-
-        mobileCloseButton.addEventListener(
-            "click",
-            function () {
-
-                sidebar.classList.remove(
-                    "mobile-sidebar-open"
-                );
-
-
-                mobileMenuOverlay.classList.remove(
-                    "mobile-overlay-open"
-                );
-
-            }
-        );
-
-
-
-        /* CLOSE WHEN OVERLAY IS CLICKED */
-
-        mobileMenuOverlay.addEventListener(
-            "click",
-            function () {
-
-                sidebar.classList.remove(
-                    "mobile-sidebar-open"
-                );
-
-
-                mobileMenuOverlay.classList.remove(
-                    "mobile-overlay-open"
-                );
-
-            }
-        );
 
 
     </script>
