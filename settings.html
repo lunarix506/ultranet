@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -21,10 +22,13 @@
 
 <body>
 
+
     <main class="settings-page">
 
 
-        <!-- SIDEBAR -->
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
 
         <aside class="sidebar">
 
@@ -50,6 +54,7 @@
             <!-- NAVIGATION -->
 
             <nav class="dashboard-nav">
+
 
                 <a
                     href="dashboard.html"
@@ -86,6 +91,7 @@
                     Settings
                 </a>
 
+
             </nav>
 
 
@@ -104,6 +110,7 @@
                         ?
                     </span>
 
+
                     <div>
 
                         <strong>
@@ -116,11 +123,12 @@
 
                     </div>
 
+
                 </a>
 
 
                 <a
-                    href="ultranet.html"
+                    href="index.html"
                     class="logout-button"
                 >
                     ← Log Out
@@ -134,7 +142,9 @@
 
 
 
-        <!-- MAIN CONTENT -->
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
 
         <section class="settings-content">
 
@@ -143,62 +153,83 @@
 
             <header class="settings-header">
 
+
                 <div>
+
 
                     <span class="page-tag">
                         ACCOUNT SETTINGS
                     </span>
+
 
                     <h1>
                         Manage your
                         <span>account.</span>
                     </h1>
 
+
                     <p>
                         Update your personal information and
                         manage your Ultranet Pay account.
                     </p>
 
+
                 </div>
+
 
             </header>
 
 
 
-            <!-- PROFILE CARD -->
+            <!-- =========================
+                 PROFILE CARD
+            ========================== -->
 
             <section class="settings-card profile-card">
 
 
+                <!-- PROFILE HEADER -->
+
                 <div class="settings-card-header">
 
+
                     <div>
+
 
                         <span class="card-label">
                             PROFILE
                         </span>
 
+
                         <h2>
                             Personal Information
                         </h2>
+
 
                         <p>
                             Keep your account information
                             up to date.
                         </p>
 
+
                     </div>
 
 
-                    <div class="large-avatar" id="settingsAvatar">
-    U
-</div>
+                    <!-- AVATAR -->
+
+                    <div
+                        class="large-avatar"
+                        id="settingsAvatar"
+                    >
+                        U
+                    </div>
+
 
                 </div>
 
 
 
-                <!-- FORM -->
+                <!-- PROFILE FORM -->
 
                 <form
                     id="profileForm"
@@ -207,19 +238,25 @@
 
 
                     <div class="settings-form-grid">
+
+
                         <!-- FULL NAME -->
 
                         <div class="form-group">
+
 
                             <label for="settings-name">
                                 Full Name
                             </label>
 
+
                             <input
-    type="text"
-    id="settings-name"
-    placeholder="Enter your full name"
->
+                                type="text"
+                                id="settings-name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
 
                         </div>
 
@@ -229,15 +266,19 @@
 
                         <div class="form-group">
 
+
                             <label for="settings-email">
                                 Email Address
                             </label>
+
 
                             <input
                                 type="email"
                                 id="settings-email"
                                 placeholder="your@email.com"
+                                required
                             >
+
 
                         </div>
 
@@ -247,15 +288,18 @@
 
                         <div class="form-group">
 
+
                             <label for="settings-phone">
                                 Phone Number
                             </label>
+
 
                             <input
                                 type="tel"
                                 id="settings-phone"
                                 placeholder="Enter phone number"
                             >
+
 
                         </div>
 
@@ -265,9 +309,11 @@
 
                         <div class="form-group">
 
+
                             <label for="settings-country">
                                 Country
                             </label>
+
 
                             <input
                                 type="text"
@@ -275,10 +321,12 @@
                                 placeholder="Enter your country"
                             >
 
+
                         </div>
 
 
                     </div>
+
 
 
                     <!-- SAVE BUTTON -->
@@ -298,27 +346,34 @@
 
 
 
-            <!-- SECURITY -->
+            <!-- =========================
+                 SECURITY
+            ========================== -->
 
             <section class="settings-card security-card">
 
 
                 <div class="settings-card-title">
 
+
                     <span class="card-label">
                         SECURITY
                     </span>
 
+
                     <h2>
                         Password & Security
                     </h2>
+
 
                     <p>
                         Keep your account secure by using
                         a strong password.
                     </p>
 
+
                 </div>
+
 
 
                 <div class="security-option">
@@ -331,19 +386,23 @@
 
                     <div class="security-info">
 
+
                         <h3>
                             Change Password
                         </h3>
+
 
                         <p>
                             Update your account password
                             anytime.
                         </p>
 
+
                     </div>
 
 
                     <button
+                        type="button"
                         class="secondary-button"
                         id="changePasswordButton"
                     >
@@ -358,27 +417,36 @@
 
 
 
-            <!-- SUPPORT -->
+            <!-- =========================
+                 SUPPORT
+            ========================== -->
 
             <section class="settings-card support-settings">
 
 
                 <div class="settings-card-title">
 
+
                     <span class="card-label">
                         SUPPORT
                     </span>
 
+
                     <h2>
                         Need Assistance?
                     </h2>
+
 
                     <p>
                         Our team is always available to
                         help you with your transactions.
                     </p>
 
+
                 </div>
+
+
+
                 <a
                     href="https://wa.me/12492884792"
                     target="_blank"
@@ -392,29 +460,37 @@
 
 
 
-            <!-- LOGOUT -->
+            <!-- =========================
+                 LOGOUT
+            ========================== -->
 
             <section class="logout-section">
 
+
                 <div>
+
 
                     <h3>
                         Want to leave?
                     </h3>
 
+
                     <p>
                         You can safely log out of your account.
                     </p>
+
 
                 </div>
 
 
                 <a
-                    href="ultranet.html"
+                    href="index.html"
                     class="danger-button"
+                    id="logoutButton"
                 >
                     LOG OUT →
                 </a>
+
 
             </section>
 
@@ -426,41 +502,282 @@
 
 
 
-    <!-- JAVASCRIPT -->
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
     <script>
 
-    const userName =
-        localStorage.getItem(
-            "ultranetName"
+
+        /* =========================
+           GET SAVED INFORMATION
+        ========================== */
+
+        const savedName =
+            localStorage.getItem(
+                "ultranetName"
+            );
+
+
+        const savedEmail =
+            localStorage.getItem(
+                "ultranetEmail"
+            );
+
+
+        const savedPhone =
+            localStorage.getItem(
+                "ultranetPhone"
+            );
+
+
+        const savedCountry =
+            localStorage.getItem(
+                "ultranetCountry"
+            );
+
+
+
+        /* =========================
+           GET PAGE ELEMENTS
+        ========================== */
+
+        const settingsName =
+            document.getElementById(
+                "settings-name"
+            );
+
+
+        const settingsEmail =
+            document.getElementById(
+                "settings-email"
+            );
+
+
+        const settingsPhone =
+            document.getElementById(
+                "settings-phone"
+            );
+
+
+        const settingsCountry =
+            document.getElementById(
+                "settings-country"
+            );
+
+
+        const settingsAvatar =
+            document.getElementById(
+                "settingsAvatar"
+            );
+
+
+        const profileForm =
+            document.getElementById(
+                "profileForm"
+            );
+
+
+        const changePasswordButton =
+            document.getElementById(
+                "changePasswordButton"
+            );
+
+
+        const logoutButton =
+            document.getElementById(
+                "logoutButton"
+            );
+
+
+
+        /* =========================
+           DISPLAY SAVED INFORMATION
+        ========================== */
+
+        if (savedName) {
+
+
+            settingsName.value =
+                savedName;
+
+
+            settingsAvatar.textContent =
+                savedName
+                .charAt(0)
+                .toUpperCase();
+
+
+        }
+
+
+        if (savedEmail) {
+
+
+            settingsEmail.value =
+                savedEmail;
+
+
+        }
+
+
+        if (savedPhone) {
+
+
+            settingsPhone.value =
+                savedPhone;
+
+
+        }
+
+
+        if (savedCountry) {
+
+
+            settingsCountry.value =
+                savedCountry;
+
+
+        }
+
+
+
+        /* =========================
+           SAVE PROFILE CHANGES
+        ========================== */
+
+        profileForm.addEventListener(
+            "submit",
+            function(event) {
+
+
+                event.preventDefault();
+
+
+
+                const newName =
+                    settingsName.value.trim();
+
+
+                const newEmail =
+                    settingsEmail.value.trim();
+
+
+                const newPhone =
+                    settingsPhone.value.trim();
+
+
+                const newCountry =
+                    settingsCountry.value.trim();
+
+
+
+                /* SAVE NAME */
+
+                localStorage.setItem(
+                    "ultranetName",
+                    newName
+                );
+
+
+
+                /* SAVE EMAIL */
+
+                localStorage.setItem(
+                    "ultranetEmail",
+                    newEmail
+                );
+
+
+
+                /* SAVE PHONE */
+
+                localStorage.setItem(
+                    "ultranetPhone",
+                    newPhone
+                );
+
+
+
+                /* SAVE COUNTRY */
+
+                localStorage.setItem(
+                    "ultranetCountry",
+                    newCountry
+                );
+
+
+
+                /* UPDATE AVATAR */
+
+                if (newName) {
+
+
+                    settingsAvatar.textContent =
+                        newName
+                        .charAt(0)
+                        .toUpperCase();
+
+
+                }
+
+
+
+                /* SUCCESS MESSAGE */
+
+                alert(
+                    "Your profile has been updated successfully!"
+                );
+
+
+            }
         );
 
 
-    const dashboardName =
-        document.getElementById(
-            "userName"
+
+        /* =========================
+           CHANGE PASSWORD
+        ========================== */
+
+        changePasswordButton.addEventListener(
+            "click",
+            function() {
+
+
+                alert(
+                    "Password change feature coming soon."
+                );
+
+
+            }
         );
 
 
-    const userAvatar =
-        document.getElementById(
-            "userAvatar"
+
+        /* =========================
+           LOGOUT
+        ========================== */
+
+        logoutButton.addEventListener(
+            "click",
+            function() {
+
+
+                /*
+                    User information remains saved.
+
+                    This simply redirects the user
+                    back to the login page.
+                */
+
+
+            }
         );
 
 
-    if (userName) {
-
-        dashboardName.textContent =
-            userName;
-
-
-        userAvatar.textContent =
-            userName.charAt(0).toUpperCase();
-
-    }
-
-</script>
+    </script>
 
 
 </body>
+
 </html>
