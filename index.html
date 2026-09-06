@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Ultranet Pay | Login</title>
 
-    <link rel="stylesheet" href="ultranet.css">
+    <link
+        rel="stylesheet"
+        href="ultranet.css"
+    >
+
 </head>
+
 
 <body>
 
+
     <main class="login-page">
 
-        <!-- LEFT SIDE -->
+
+        <!-- =========================
+             LEFT SIDE
+        ========================== -->
+
         <section class="login-branding">
+
 
             <div class="background-grid"></div>
 
-            <!-- Logo -->
-            <a href="ultranet.html" class="brand-logo">
 
-                <div class="brand-icon">U</div>
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="brand-logo"
+            >
+
+                <div class="brand-icon">
+                    U
+                </div>
 
                 <span class="brand-name">
                     ULTRANET PAY
@@ -30,92 +54,172 @@
             </a>
 
 
-            <!-- Hero Content -->
+
+            <!-- =========================
+                 HERO CONTENT
+            ========================== -->
+
             <div class="login-hero">
+
 
                 <span class="hero-tag">
                     SMART CURRENCY EXCHANGE
                 </span>
 
+
                 <h1>
+
                     Exchange
-                    <span>Smarter.</span>
+
+                    <span>
+                        Smarter.
+                    </span>
+
                 </h1>
 
+
                 <p>
+
                     Fast, secure and seamless currency exchange.
                     Experience a smarter way to move your money
                     with Ultranet Pay.
+
                 </p>
 
 
-                <!-- Currency Display -->
+
+                <!-- CURRENCIES -->
+
                 <div class="currency-display">
+
 
                     <div class="currency-box">
                         CAD
                     </div>
 
-                    <span class="currency-arrow">→</span>
+
+                    <span class="currency-arrow">
+                        →
+                    </span>
+
 
                     <div class="currency-box">
                         NAIRA
                     </div>
 
-                    <span class="currency-arrow">→</span>
+
+                    <span class="currency-arrow">
+                        →
+                    </span>
+
 
                     <div class="currency-box">
                         USD
                     </div>
 
+
                 </div>
+
 
             </div>
 
 
-            <!-- Bottom Info -->
+
+            <!-- =========================
+                 BOTTOM INFO
+            ========================== -->
+
             <div class="trust-info">
 
-                <div>
-                    <strong>Secure</strong>
-                    <span>Your safety matters</span>
-                </div>
 
                 <div>
-                    <strong>Fast</strong>
-                    <span>Quick transactions</span>
+
+                    <strong>
+                        Secure
+                    </strong>
+
+                    <span>
+                        Your safety matters
+                    </span>
+
                 </div>
 
+
+
                 <div>
-                    <strong>Reliable</strong>
-                    <span>Service you can trust</span>
+
+                    <strong>
+                        Fast
+                    </strong>
+
+                    <span>
+                        Quick transactions
+                    </span>
+
                 </div>
+
+
+
+                <div>
+
+                    <strong>
+                        Reliable
+                    </strong>
+
+                    <span>
+                        Service you can trust
+                    </span>
+
+                </div>
+
 
             </div>
+
 
         </section>
 
 
-        <!-- RIGHT SIDE -->
+
+        <!-- =========================
+             RIGHT SIDE
+        ========================== -->
+
         <section class="login-section">
+
 
             <div class="login-card">
 
-                <h2>Welcome Back</h2>
+
+                <h2>
+                    Welcome Back
+                </h2>
+
 
                 <p>
-                    Enter your details to access your Ultranet Pay account.
+
+                    Enter your details to access
+                    your Ultranet Pay account.
+
                 </p>
 
 
-                <form>
 
-                    <!-- Email -->
+                <!-- =========================
+                     LOGIN FORM
+                ========================== -->
+
+                <form id="loginForm">
+
+
+                    <!-- EMAIL -->
+
                     <div class="form-group">
+
 
                         <label for="email">
                             Email Address
                         </label>
+
 
                         <input
                             type="email"
@@ -124,15 +228,20 @@
                             required
                         >
 
+
                     </div>
 
 
-                    <!-- Password -->
+
+                    <!-- PASSWORD -->
+
                     <div class="form-group">
+
 
                         <label for="password">
                             Password
                         </label>
+
 
                         <input
                             type="password"
@@ -141,63 +250,230 @@
                             required
                         >
 
+
                     </div>
 
 
-                    <!-- Options -->
+
+                    <!-- =========================
+                         OPTIONS
+                    ========================== -->
+
                     <div class="login-options">
+
 
                         <label class="remember-me">
 
-                            <input type="checkbox">
 
-                            <span>Remember me</span>
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+
+                            <span>
+                                Remember me
+                            </span>
+
 
                         </label>
+
 
 
                         <a href="#">
                             Forgot Password?
                         </a>
 
+
                     </div>
-                    <!-- Login Button -->
+
+
+
+                    <!-- LOGIN BUTTON -->
+
                     <button
                         type="submit"
                         class="main-button"
                     >
+
                         LOGIN TO ACCOUNT →
+
                     </button>
 
-                <form id="loginForm">
+
+                </form>
 
 
-                <!-- Signup -->
+
+                <!-- =========================
+                     SIGNUP
+                ========================== -->
+
                 <div class="bottom-link">
+
 
                     Don't have an account?
 
+
                     <a href="signup.html">
+
                         Create Account
+
                     </a>
+
 
                 </div>
 
+
             </div>
+
 
         </section>
 
+
     </main>
 
-   <script>
-const loginForm = document.getElementById("loginForm");
 
-loginForm.addEventListener("submit", function(event) {
-    event.preventDefault();
 
-    alert("JavaScript is working!");
-});
-</script>
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+
+        const loginForm =
+            document.getElementById(
+                "loginForm"
+            );
+
+
+        loginForm.addEventListener(
+            "submit",
+            function (event) {
+
+
+                event.preventDefault();
+
+
+
+                /* =========================
+                   GET USER INPUT
+                ========================== */
+
+                const email =
+                    document
+                        .getElementById(
+                            "email"
+                        )
+                        .value
+                        .trim();
+
+
+                const password =
+                    document
+                        .getElementById(
+                            "password"
+                        )
+                        .value;
+
+
+
+                /* =========================
+                   GET SAVED USER DATA
+                ========================== */
+
+                const savedName =
+                    localStorage.getItem(
+                        "ultranetName"
+                    );
+
+
+                const savedEmail =
+                    localStorage.getItem(
+                        "ultranetEmail"
+                    );
+
+
+                const savedPassword =
+                    localStorage.getItem(
+                        "ultranetPassword"
+                    );
+
+
+
+                /* =========================
+                   CHECK ACCOUNT
+                ========================== */
+
+                if (
+                    !savedName ||
+                    !savedEmail ||
+                    !savedPassword
+                ) {
+
+
+                    alert(
+                        "No account found. Please create an account first."
+                    );
+
+
+                    window.location.href =
+                        "signup.html";
+
+
+                    return;
+
+                }
+
+
+
+                /* =========================
+                   CHECK LOGIN DETAILS
+                ========================== */
+
+                if (
+                    email === savedEmail &&
+                    password === savedPassword
+                ) {
+
+
+                    /* =========================
+                       SAVE LOGIN SESSION
+                    ========================== */
+
+                    localStorage.setItem(
+                        "ultranetLoggedIn",
+                        "true"
+                    );
+
+
+                    /* =========================
+                       REDIRECT
+                    ========================== */
+
+                    window.location.href =
+                        "dashboard.html";
+
+
+                } else {
+
+
+                    alert(
+                        "Incorrect email or password. Please try again."
+                    );
+
+
+                }
+
+
+            }
+        );
+
+
+    </script>
+
 
 </body>
+
 </html>
