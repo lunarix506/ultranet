@@ -4,68 +4,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultranet Pay Login</title>
+
+    <title>Ultranet Pay | Login</title>
+
+    <link rel="stylesheet" href="ultranet.css">
 </head>
 
 <body>
 
-    <h1>Ultranet Pay Login</h1>
+    <main class="login-page">
 
-    <form id="loginForm">
+        <!-- LEFT SIDE -->
+        <section class="login-branding">
 
-        <input
-            type="email"
-            id="loginEmail"
-            placeholder="Email"
-            required
-        >
+            <div class="background-grid"></div>
 
-        <br><br>
+            <!-- Logo -->
+            <a href="ultranet.html" class="brand-logo">
 
-        <input
-            type="password"
-            id="loginPassword"
-            placeholder="Password"
-            required
-        >
+                <div class="brand-icon">U</div>
 
-        <br><br>
+                <span class="brand-name">
+                    ULTRANET PAY
+                </span>
 
-        <button type="submit">
-            LOGIN
-        </button>
+            </a>
 
-    </form>
+
+            <!-- Hero Content -->
+            <div class="login-hero">
+
+                <span class="hero-tag">
+                    SMART CURRENCY EXCHANGE
+                </span>
+
+                <h1>
+                    Exchange
+                    <span>Smarter.</span>
+                </h1>
+
+                <p>
+                    Fast, secure and seamless currency exchange.
+                    Experience a smarter way to move your money
+                    with Ultranet Pay.
+                </p>
+
+
+                <!-- Currency Display -->
+                <div class="currency-display">
+
+                    <div class="currency-box">
+                        CAD
+                    </div>
+
+                    <span class="currency-arrow">→</span>
+
+                    <div class="currency-box">
+                        NAIRA
+                    </div>
+
+                    <span class="currency-arrow">→</span>
+
+                    <div class="currency-box">
+                        USD
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Info -->
+            <div class="trust-info">
+
+                <div>
+                    <strong>Secure</strong>
+                    <span>Your safety matters</span>
+                </div>
+
+                <div>
+                    <strong>Fast</strong>
+                    <span>Quick transactions</span>
+                </div>
+
+                <div>
+                    <strong>Reliable</strong>
+                    <span>Service you can trust</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <section class="login-section">
+
+            <div class="login-card">
+
+                <h2>Welcome Back</h2>
+
+                <p>
+                    Enter your details to access your Ultranet Pay account.
+                </p>
+
+
+                <!-- LOGIN FORM -->
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Options -->
+                    <div class="login-options">
+
+                        <label class="remember-me">
+
+                            <input type="checkbox">
+
+                            <span>Remember me</span>
+
+                        </label>
+
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+                    <button
+                        type="submit"
+                        class="main-button"
+                    >
+                        LOGIN TO ACCOUNT →
+                    </button>
+
+                </form>
+
+
+                <!-- Signup -->
+                <div class="bottom-link">
+
+                    Don't have an account?
+
+                    <a href="signup.html">
+                        Create Account
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- LOGIN JAVASCRIPT -->
 
     <script>
-        const form = document.getElementById("loginForm");
 
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
+        const loginForm =
+            document.getElementById("loginForm");
 
-            const email =
-                document.getElementById("loginEmail").value
-                .trim()
-                .toLowerCase();
 
-            const password =
-                document.getElementById("loginPassword").value;
+        loginForm.addEventListener(
+            "submit",
+            function(event) {
 
-            const savedEmail =
-                localStorage.getItem("ultranetEmail");
+                event.preventDefault();
 
-            const savedPassword =
-                localStorage.getItem("ultranetPassword");
 
-            if (email === savedEmail && password === savedPassword) {
-                alert("Login successful!");
-                localStorage.setItem("ultranetLoggedIn", "true");
-                window.location.href = "dashboard.html";
-            } else {
-                alert("Incorrect email or password.");
+                const email =
+                    document.getElementById("email")
+                    .value
+                    .trim()
+                    .toLowerCase();
+
+
+                const password =
+                    document.getElementById("password")
+                    .value;
+
+
+                const savedEmail =
+                    localStorage.getItem("ultranetEmail");
+
+
+                const savedPassword =
+                    localStorage.getItem("ultranetPassword");
+
+
+                if (
+                    email === savedEmail &&
+                    password === savedPassword
+                ) {
+
+                    localStorage.setItem(
+                        "ultranetLoggedIn",
+                        "true"
+                    );
+
+
+                    alert(
+                        "Login successful!"
+                    );
+
+
+                    window.location.href =
+                        "dashboard.html";
+
+                } else {
+
+                    alert(
+                        "Incorrect email or password."
+                    );
+
+                }
+
             }
-        });
+        );
+
     </script>
 
 </body>
+
 </html>
